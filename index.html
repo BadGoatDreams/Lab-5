@@ -3,42 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Lab 5</title>
-    <!-- Optional: Link to an external CSS file -->
-    <link rel="stylesheet" href="lib/leaflet/leaflet.css"> -->
-    <style>
-        p.ex1 {
-          font-size: 30px;
-      }
-      p.ex2 {
-          font-size: 50px;
-          font-family: Georgia, serif;
-      }
-      /* Legend styling */
-      .info.legend {
-          background: white;
-          padding: 10px;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-          font-family: Arial, sans-serif;
-          font-size: 14px;
-          line-height: 18px;
-          color: #555;
-      }
-      .info.legend strong {
-          display: block;
-          margin-bottom: 10px;
-      }
-    </style>
-</head>
+    <title>Lab 5</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />  </head>
+<style>
+    p.ex1 { font-size: 30px; }
+    p.ex2 { font-size: 50px; font-family: Georgia, serif; }
+    .info.legend { /* Legend styling */
+        background: white;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        line-height: 18px;
+        color: #555;
+    }
+    .info.legend strong {
+        display: block;
+        margin-bottom: 10px;
+    }
+    #map { height: 800px; } /* Important: Style the map container */
+</style>
 <body>
-    <div id="map" style="height: 800px;"></div>
+    <div id="map"></div>
 
-  
-    <script src="lib/leaflet/leaflet-src.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>  <script src="https://unpkg.com/leaflet-providers@2.0.2/leaflet.providers.js"></script> <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="lib/turf.min.js" charset="utf-8"></script>
-    <script src="js/main.js"></script>
-    
-</body>
+    <script src="js/main.js"></script>  </body>
 </html>
